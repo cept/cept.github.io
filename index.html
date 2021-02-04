@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <title>My Portfolio</title>
+
+    <style>
+        section {
+            min-height: 450px;
+        }
+
+        .jumbotron {
+            background-image: url('img/header1.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: 0 -230px;
+            color: #eaeaea;
+            overflow: hidden;
+        }
+
+        .jumbotron h1 {
+            text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .rounded-circle {
+            border: 1px solid #eaeaea;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .pKiri,
+        .pKanan {
+            opacity: 0;
+            transform: translate(-50px, 0) rotate(10deg);
+            transition: 1s;
+        }
+
+        .pKanan {
+            transform: translate(50px, 0) rotate(-10deg);
+        }
+
+        .pKiri.pMuncul,
+        .pKanan.pMuncul {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+
+        .portfolio .card-img-top {
+            opacity: 0;
+            transform: translate(0, -40px);
+            transition: .5s;
+        }
+
+        .portfolio .card-img-top.muncul {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand ml-3" href="#">Acep Rohmat</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container ml-5">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center mt-5">
+            <img src="img/vecvec.jpg" width="20%" class="rounded-circle img-thumbnail">
+            <h1 class="display-5">Acep Rohmat</h1>
+            <p class="lead">Fullstack Web Developer</p>
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="container text-center pt-5">
+            <h2 class="text-muted">About</h2>
+            <div class="row justify-content-center mt-3">
+                <div class="col-5 text-justify">
+                    <p class="pKiri">
+                        Saya lulusan tahun 2019 di SMK Terpadu Ad-Dimyati jurusan Teknik Komputer Jaringan, Sekarang
+                        sedang menempuh pendidikan di STMIK Mardira Indonesia Bandung jurusan Rekayasa Perangkat Lunak.
+                        Pengalaman : Prakerin selama 2 bulan
+                        di perusahaan jaringan PT.Citra Jelajah Informatika, Mengikuti banyak pelatihan programming baik
+                        offline/online.
+                    </p>
+                </div>
+                <div class="col-5 text-justify">
+                    <p class="pKanan">
+                        Skill : HTML, CSS, Bootstrap, Tailwind, JavaScript, React JS, Node JS, Laravel, Git dan Github,
+                        MS. Office,
+                        Figma, Photoshop,
+                        Corel.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio bg-light" id="portfolio">
+        <div class="container text-center pt-5 pb-5">
+            <h2 class="text-muted">Portfolio</h2>
+            <div class="row justify-content-center mt-3">
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="img/full-stack-web-designer-acep-rohmat.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Full-Stack Website Designer</h5>
+                        <p class="card-text">Online Course BuildWithAngga <br>Mentor : Shandika Galih & Angga Risky</p>
+                        <a href="#" class="card-link">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="img/sertifikat_course_dicoding_webpemula-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pemrograman Web Dasar</h5>
+                        <p class="card-text">Online Course Dicoding</p>
+                        <a href="#" class="card-link">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="img/sertifikat_course_dicoding_frontEndWebFundamental-1.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundamental Front End Web</h5>
+                        <p class="card-text">Online Course Dicoding</p>
+                        <a href="#" class="card-link">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="img/sertifikat_course_dicoding_frontEndWebFundamental-1.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundamental Front End Web</h5>
+                        <p class="card-text">Online Course Dicoding</p>
+                        <a href="#" class="card-link">Go somewhere</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container mt-4">
+            <h2 class="text-muted text-center mb-3">Contact</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            My Address
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <address>Jl. Babakan Ciparay Gg. Pa Abid 40233 Kota Bandung</address>
+                            </li>
+                        </ul>
+                    </div><br>
+                    <div class="card" style="width: 18rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fa fa-whatsapp fa-lg" aria-hidden="true"></i>
+                                08818388614</li>
+                            <li class="list-group-item"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i>
+                                @jangar04
+                            </li>
+                            <li class="list-group-item"><i class="fa fa-github" aria-hidden="true"></i> cept</li>
+                            <li class="list-group-item"><i class="fa fa-envelope" aria-hidden="true"></i>
+                                aceprohmat10@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <form action="javascript:sendEmail()" method="post">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Nama</label>
+                            <input type="text" class="form-control" id="nama">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Email</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Pesan</label>
+                            <textarea class="form-control" id="pesan" rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-dark" type="submit" name="submit">Kirim</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="text-light bg-dark p-2 text-center mt-4">
+        <p><i class="fa fa-copyright" aria-hidden="true"></i> Copyright 2021</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
