@@ -15,7 +15,7 @@ function sendEmail() {
         Subject: nama,
         Body: body
     }).then(
-        message => alert('Pesan anda terkirim!')
+        message => alert(message)
     );
 }
 
