@@ -15,7 +15,14 @@ function sendEmail() {
         Subject: nama,
         Body: body
     }).then(
-        message => alert(message)
+        message => {
+            if (message == "OK") {
+                alert('Pesan anda terkirim!')
+            } else {
+                message
+            }
+
+        }
     );
 }
 
