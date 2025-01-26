@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
+
+nav .active {
+    color: #0fa8c5 !important;
+}
+
+.foto_profile img {
+    border: 3px solid #0fa8c5;
+    border-radius: 50%;
+}
+
+.title-heading {
+    font-size: 22px;
+    font-weight: 200;
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    border-bottom: 1px solid #0fa8c5;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#portfolio {
+    background-color: #202020;
+}
+
+#portfolio .card {
+    border: 1px solid #0fa8c5;
+}
+
+#portfolio .btn-detail {
+    background-color: #0fa8c5;
+    color: #eee;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+
+.btn-link {
+    background-color: #0fa8c5;
+    color: #eee;
+}
+
+footer {
+    text-align: center;
+    position: relative;
+    bottom: -300px;
+    z-index: 1;
+    color: #eee;
+    font-weight: 600;
+}
+
+.scrollup {
+    font-size: 38px;
+    padding: 1px 6px;
+    background-color: #0fa8c5;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    color: #eee;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scrollup:hover{
+    background-color: #0c7b92;
+}
+
+.scrollup.hidden {
+    opacity: 0;
+    transform: translateY(100px);
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .foto_profile img {
+        width: 150px;
+    }
+
+    footer {
+        bottom: -90px;
+    }
+}
