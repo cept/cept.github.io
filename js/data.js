@@ -10,28 +10,28 @@ const myPortfolio = [
         id: 2,
         title: 'Github User',
         description: 'Aplikasi untuk membantu mencari Pengguna Github yang diambil dari API Github. <br>Tech Stack : html, css, javascript',
-        image: 'images/GithubUser.jpg',
+        image: 'images/GithubUser.JPG',
         url: 'https://cept.github.io/GithubUser/'
     },
     {
         id: 3,
         title: 'Jangar web statis',
         description: 'Hasil dari bootcamp Coding Mum di SMK Terpadu Ad-Dimyati. <br>Tech Stack : html, css',
-        image: 'images/jang4r.web.id.jpg',
+        image: 'images/jang4r.web.id.JPG',
         url: 'https://cept.github.io/jang4r.web.id/'
     },
     {
         id: 4,
         title: 'Jangar Movies',
         description: 'Aplikasi untuk membantu mencari film yang diambil dari API omdb. <br>Tech Stack : html, css, javascript',
-        image: 'images/jangarmovies.jpg',
+        image: 'images/jangarmovies.JPG',
         url: 'https://cept.github.io/jangarmovies/'
     },
     {
         id: 5,
         title: 'Landing Page Online Course Bootstrap 4',
         description: 'Hasil dari online course kelas bootstrap buildwithangga. <br>tech stack : html, css(bootsrap)',
-        image: 'images/bwabootstrap.jpg',
+        image: 'images/bwabootstrap.JPG',
         url: 'https://cept.github.io/bwabootstrap4'
     },
     {
