@@ -8,6 +8,10 @@ body {
     background-color: #000;
 }
 
+.borderNama {
+    border-bottom: 1px solid #0fa8c5;
+}
+
 nav .active {
     color: #0fa8c5 !important;
 }
