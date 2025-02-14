@@ -13,9 +13,9 @@ myPortfolio.forEach(item => {
 
     portfolioItem += `<div class="card bg-black m-2" style="width: 18rem;" id="${item.id}">
             <img src="${item.image}" class="card-img-top" alt="foto projek">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title">${truncatedTitle}</h5>
-              <p class="card-text">${truncatedDescription}</p>
+              <p class="card-text flex-grow-1">${truncatedDescription}</p>
               <button type="button" class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modal-${item.id}">
                Details
               </button>
