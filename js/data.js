@@ -76,6 +76,13 @@ const myPortfolio = [
         image: 'images/apkpayroll.png',
         url: ''
     },
+    {
+        id: 12,
+        title: 'Aplikasi Absensi',
+        description: 'Membuat aplikasi absensi sederhana yang terintegrasi dengan API maps yang memberikan informasi lokasi dari user. <br>Tech Stack : Laravel (Inertia), React JS, Tailwind CSS',
+        image: 'images/apkabsensi.png',
+        url: ''
+    },
 ];
 
 export default myPortfolio;
