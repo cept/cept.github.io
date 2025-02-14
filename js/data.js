@@ -78,9 +78,9 @@ const myPortfolio = [
     },
     {
         id: 12,
-        title: 'Aplikasi Absensi',
-        description: 'Membuat aplikasi absensi sederhana yang terintegrasi dengan API maps yang memberikan informasi lokasi dari user. <br>Tech Stack : Laravel (Inertia), React JS, Tailwind CSS',
-        image: 'images/apkabsensi.png',
+        title: 'Aplikasi Absensi 2',
+        description: 'Membuat aplikasi absensi sederhana yang terintegrasi dengan API maps yang memberikan informasi lokasi dari user. hasil dari pembelajaran di Wegodev<br>Tech Stack : Laravel (Inertia), React JS, Tailwind CSS',
+        image: 'images/apkabsensi2.png',
         url: ''
     },
 ];
