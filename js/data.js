@@ -60,7 +60,7 @@ const myPortfolio = [
         title: 'Aplikasi Resume CV Generator',
         description: 'Pada saat tugas skripsi saya membuat aplikasi ini, Aplikasi ini menggunakan 2 role yaitu admin dan user biasa. Fitur yang berada di role admin yaitu Dashboard, Management User, Templates untuk menambahkan template resume yang baru. Sedangkan fitur yang berada di role user ada buat template, pilih template, view template, download template dan delete template. <br>Tech Stack : Laravel',
         image: 'images/resumecv.png',
-        url: ''
+        url: 'https://github.com/cept/resumecv'
     },
     {
         id: 10,
@@ -74,14 +74,14 @@ const myPortfolio = [
         title: 'Aplikasi Payroll',
         description: 'Membuat aplikasi payroll pph21. <br>Tech Stack : Laravel',
         image: 'images/apkpayroll.png',
-        url: ''
+        url: 'https://github.com/cept/payroll'
     },
     {
         id: 12,
         title: 'Aplikasi Absensi 2',
         description: 'Membuat aplikasi absensi sederhana yang terintegrasi dengan API maps yang memberikan informasi lokasi dari user. hasil dari pembelajaran di Wegodev<br>Tech Stack : Laravel (Inertia), React JS, Tailwind CSS',
         image: 'images/apkabsensi2.png',
-        url: ''
+        url: 'https://github.com/cept/absensi'
     },
 ];
 
