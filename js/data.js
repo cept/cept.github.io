@@ -84,7 +84,7 @@ const myPortfolio = [
         url: 'https://github.com/cept/absensi'
     },
     {
-        id: 12,
+        id: 13,
         title: 'Landing Page Alumunium Glass',
         description: 'Projek membuat website landing page toko alumunium glass, menggunakan UI jangar store dengan di perbaiki SEO nya. <br>Tech Stack : HTML & CSS (Bootstrap), SEO Meta tag',
         image: 'images/alumuniumglass-portfolio.png',
