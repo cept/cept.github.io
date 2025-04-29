@@ -1,49 +1,76 @@
 import myPortfolio from './data.js';
 
 const portfolioList = document.getElementById("portfolio-list");
-let portfolioItem = '';
+
 const truncatetext = (text, limit) => {
     const words = text.split(" ");
     return words.length > limit ? words.slice(0, limit).join(" ") + "..." : text;
 };
 
-myPortfolio.forEach(item => {
-    const truncatedDescription = truncatetext(item.description, 10);
-    const truncatedTitle = truncatetext(item.title, 3);
+// skeleton UI
+let skeletonItem = '';
+for (let i = 0; i < 3; i++) {
+    skeletonItem += `
+      <div class="card bg-black m-2 skeleton-card" style="width: 18rem;">
+        <div class="skeleton-image placeholder-glow"></div>
+        <div class="card-body d-flex flex-column">
+          <h5 class="skeleton-title placeholder-glow">
+            <span class="placeholder col-6"></span>
+            </h5>
+            <p class="skeleton-text placeholder-glow flex-grow-1">
+            <span class="placeholder col-7"></span>
+            <span class="placeholder col-4"></span>
+            <span class="placeholder col-6"></span>
+          </p>
+          <button class="btn btn-detail mt-auto disabled placeholder col-4"></button>
+        </div>
+      </div>`;
+}
+portfolioList.innerHTML = skeletonItem;
 
-    portfolioItem += `<div class="card bg-black m-2" style="width: 18rem;" id="${item.id}">
-            <img src="${item.image}" class="card-img-top" alt="foto projek">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">${truncatedTitle}</h5>
-              <p class="card-text flex-grow-1">${truncatedDescription}</p>
-              <button type="button" class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modal-${item.id}">
-               Details
-              </button>
+let portfolioItem = '';
+setTimeout(() => {
+    portfolioItem += '';
 
-              <!-- Modal -->
-            <div class="modal fade" id="modal-${item.id}" tabindex="-1" aria-labelledby="modalLabel-${item.id}" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="modalLabel-${item.id}">${item.title}</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    myPortfolio.forEach(item => {
+        const truncatedDescription = truncatetext(item.description, 10);
+        const truncatedTitle = truncatetext(item.title, 3);
+    
+        portfolioItem += `<div class="card bg-black m-2" style="width: 18rem;" id="${item.id}">
+                <img src="${item.image}" class="card-img-top" loading="lazy" alt="foto projek">
+                <div class="card-body d-flex flex-column">
+                  <h5 class="card-title">${truncatedTitle}</h5>
+                  <p class="card-text flex-grow-1">${truncatedDescription}</p>
+                  <button type="button" class="btn btn-detail" data-bs-toggle="modal" data-bs-target="#modal-${item.id}">
+                   Details
+                  </button>
+    
+                  <!-- Modal -->
+                <div class="modal fade" id="modal-${item.id}" tabindex="-1" aria-labelledby="modalLabel-${item.id}" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalLabel-${item.id}">${item.title}</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ${item.description}
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="${item.url}" class="btn btn-link" target="_blank">Go to link</a>
+                    </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    ${item.description}
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a href="${item.url}" class="btn btn-link" target="_blank">Go to link</a>
+    
                 </div>
-                </div>
-            </div>
-            </div>
+              </div>`;
+    });
+    portfolioList.innerHTML = portfolioItem;
+}, 1000)
 
-            </div>
-          </div>`;
-});
-portfolioList.innerHTML = portfolioItem;
-
+// button scroll
 const scrollUp = document.getElementById('scrollup');
 
 window.addEventListener('scroll', () => {
