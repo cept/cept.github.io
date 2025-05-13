@@ -87,7 +87,7 @@ footer {
 }
 
 /* skeleton UI for lazy loading */
-.skeleton-image {
+.skeleton-image, .card-img-top {
     height: 180px;
     background-color: #444;
     border-radius: 0.25rem;
